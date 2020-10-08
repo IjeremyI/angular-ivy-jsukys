@@ -1,43 +1,62 @@
 <hello name="{{ name }}"></hello>
+
 <p>
   Start editing to see some magic happen :)
 </p>
-<div>
-  <button
-    class="btn btn-primary"
-    (click)="onTestPromiseButtonClick()">
-    TestPromiseButton
-  </button>
-</div>
-<br/>
-<div>
-  <button
-    class="btn btn-primary"
-    (click)="onTestUncaughtErrorFromFunctionPromiseButtonClick()">
-    TestErrorUncaughtFunctionPromiseButton
-  </button>
-</div>
-<br/>
-<div>
-  <button
-    class="btn btn-primary"
-    (click)="onTestUncaughtErrorFromInsidePromiseButtonClick()">
-    TestErrorUncaughtInsidePromiseButton
-  </button>
-</div>
-<br/>
-<div>
-  <button
-    class="btn btn-primary"
-    (click)="onTestCaughtErrorFromFunctionPromiseButtonClick()">
-    TestErrorCaughtFunctionPromiseButton
-  </button>
-</div>
-<br/>
-<div>
-  <button
-    class="btn btn-primary"
-    (click)="onTestCaughtErrorFromInsidePromiseButtonClick()">
-    TestErrorCaughtInsidePromiseButton
-  </button>
+
+<test></test>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-4">
+      <button
+        class="btn btn-primary"
+        (click)="onTestPromiseButtonClick()">
+        TestPromiseButton
+      </button>
+    </div>
+
+    <div class="col-md-4">
+        <button
+          class="btn btn-primary"
+          (click)="onTestUncaughtErrorFromFunctionPromiseButtonClick()">
+          TestErrorUncaughtFunctionPromiseButton
+        </button>
+    </div>
+
+    <div class="col-md-4">
+        <button
+          class="btn btn-primary"
+          (click)="onTestUncaughtErrorFromInsidePromiseButtonClick()">
+          TestErrorUncaughtInsidePromiseButton
+        </button>
+    </div>
+
+  </div>
+
+  <br/>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <button
+        class="btn btn-primary"
+        (click)="onTestCaughtErrorFromFunctionPromiseButtonClick()">
+        TestErrorCaughtFunctionPromiseButton
+      </button>
+    </div>
+
+    <div class="col-md-4">
+        <button
+          class="btn btn-primary"
+          (click)="onTestCaughtErrorFromInsidePromiseButtonClick()">
+          TestErrorCaughtInsidePromiseButton
+        </button>
+    </div>
+
+    <div class="col-md-4">
+    </div>
+
+  </div>
 </div>
