@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
-import { TestComponent } from './PromiseErrorFlowComponent/promise-error-flow.component';
+import { PromiseErrorFlowComponent } from './PromiseErrorFlowComponent/promise-error-flow.component';
 
 @NgModule({
   imports:      [
@@ -17,6 +17,8 @@ import { TestComponent } from './PromiseErrorFlowComponent/promise-error-flow.co
     HelloComponent,
     PromiseErrorFlowComponent
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [
+    AppComponent
+  ]
 })
 export class AppModule { }
