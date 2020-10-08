@@ -5,11 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
-import { TestComponent } from './TestComponent/test.component';
+import { TestComponent } from './PromiseErrorFlowComponent/promise-error-flow.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, TestComponent ],
+  imports:      [
+    BrowserModule,
+    FormsModule 
+  ],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    PromiseErrorFlowComponent
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

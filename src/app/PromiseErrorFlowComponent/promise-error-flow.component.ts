@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-	selector: 'test',
-	templateUrl: './test.component.html',
-	styleUrls: [ './test.component.css' ]
+	selector: 'promise-error-flow',
+	templateUrl: './promise-error-flow.component.html',
+	styleUrls: [ './promise-error-flow.component.css' ]
 })
-export class TestComponent  {
+export class PromiseErrorFlowComponent  {
   getPromise(throwFromFunction: boolean,
              throwFromPromise: boolean,
              hasToBeResolved: boolean){
